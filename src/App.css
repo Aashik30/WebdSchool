@@ -1,0 +1,963 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  background: #fff;
+  padding: 10px 0;
+  z-index: 1000;
+  top: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  color: #000;
+  font-size: 24px;
+}
+
+.navbar .logo img{
+  height: 70px;
+  width: 50px;
+  padding-top: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  transition: transform 0.5s ease-in;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  padding: 0 20px;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #f1c40f;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: #000;
+}
+
+.section {
+  padding: 20px;
+  color: #fff;
+}
+
+.navTwo {
+  width: 100%;
+  background-color: #115945;
+  padding: 18px;
+}
+
+.gridLayout {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navTwo p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home Section Css */
+
+.herosSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  flex-direction: row;
+}
+
+.herosectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  width: 50%;
+  color: #000;
+}
+
+.herosectionImage {
+  width: 50%;
+}
+
+.herosectionImage img {
+  width: 100%;
+  margin-top: 10px;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+@keyframes floating {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes typedjsBlink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.herosectionImage img, .AboutUsImage img, .courseSectionImage img, .Galleryyy, .ReviewerImage, .footerLogo img, .CourseSectionOne img, .CourseSectionThree img {
+  animation: floating ease 4s infinite;
+}
+
+.herosectionContent h3 {
+  font-size: 20px;
+  color: #C67336;
+}
+
+.herosectionContent h1 {
+  font-size: 45px;
+}
+
+.typed-cursor.typed-cursor--blink {
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+}
+
+.typed-cursor {
+  opacity: 1;
+}
+
+.herosectionContent p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.herosectionContentButtons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.herosectionContentButtons a {
+  text-decoration: none;
+}
+
+.ContentButtonOne {
+  background-color: #EFB74A;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+.ContentButtonTwo {
+  background-color: whitesmoke;
+  border: 2px solid #0163FD;
+  border-radius: 30px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+.ContentButtonTwo h6 {
+  font-size: 16px;
+  color: black;
+}
+
+/* Home Section Css */
+
+/* Counter Section Css */
+
+
+.Boxes {
+  margin: 50px 0px;
+  height: 230px;
+  width: 100%;
+  border-radius: 80px;
+  background-color: #115945;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+.Boxes-1, .Boxes-2 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Box-1, .Box-2, .Box-3 {
+  border-right: 2px solid white;
+  padding-right: 5%;
+}
+
+.Box-1, .Box-2, .Box-3, .Box-4 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box h2 {
+  color: white;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.box h4 {
+  color: white;
+  font-size: 17px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Counter Section Css */
+
+ /* About section css */
+
+ .AboutUsSection {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  position: relative;
+  color: #000;
+}
+
+.AboutUsContent {
+width: 50%;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.AboutUsImage {
+width: 50%;
+}
+
+.AboutUsContent h4 {
+font-size: 20px;
+color: #C67336;
+}
+
+.AboutUsContent h2 {
+font-size: 40px;
+}
+
+.AboutUsContent p {
+font-size: 20px;
+font-weight: 500;
+}
+
+.AboutUsContent button {
+background-color: #EFB74A;
+color: black;
+font-family: "Poppins", sans-serif;
+font-size: 16px;
+padding: 15px 30px;
+border: none;
+border-radius: 30px;
+font-weight: 600;
+cursor: pointer;
+filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+/* About section css */
+
+
+/* Course section css */
+
+
+.courseSection {
+  background-color: #115945;
+  padding: 30px;
+  margin: 30px 0px;
+}
+
+.courseSections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.courseSectionImage {
+  width: 50%;
+}
+
+.courseSectionContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.courseSectionImage img {
+  width: 70%;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+.courseSectionContent h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.courseSectionContent p {
+  color: white;
+  font-size: 20px;
+}
+
+.courseSectionContent button {
+  background-color: #EFB74A;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+.achivements {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+.achive-1, .achive-2, .achive-3 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+  gap: 15px;
+  background-color: white;
+}
+
+.achive h3, .achive h3, .achive h3 {
+  color: #0163FD;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.achive p, .achive p, .achive p {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Course section css */
+
+/* Gallery section css */
+
+.gallerySection h4 {
+  color: #e59800;
+  font-size: 24px;
+  text-align: center;
+}
+
+.gallerySection h2 {
+  color: black;
+  padding: 15px 0px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.Galleryyy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+.galleryOne, .galleryTwo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+}
+
+.Imageone, .ImageFour {
+  width: 55%;
+}
+
+.ImageTwo, .ImageThree {
+  width: 45%;
+}
+
+.Viewmorebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Viewmorebutton a {
+  text-decoration: none;
+}
+
+.Viewmorebutton button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFB74A;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+/* Gallery section css */
+
+ /* Review section css */
+
+ .ReviewSection {
+  padding-top: 40px;
+}
+
+.ReviewSection h4 {
+  color: #e59800;
+  font-size: 24px;
+  text-align: center;
+}
+
+.ReviewSection h2 {
+  color: black;
+  padding: 15px 0px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.reviews img {
+    margin-top: 20px;
+    width: 15% !important;
+    border-radius: 50% !important;
+    border: 5px solid #EFB74A !important;
+    filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5)) !important;
+}
+
+.reviews h3 {
+  color: black;
+  font-size: 28px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.StartRating {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.fa-star {
+  color: #e59800;
+  font-size: 16px;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #e59800;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-arrow-left {
+  left: 15px;
+}
+
+.carousel-arrow-right {
+  right: 15px;
+}
+
+.carousel-arrow svg {
+  color: white;
+  font-size: 16px;
+}
+
+.carousel-arrow:hover {
+  background-color: #0163FD;
+}
+
+.reviews p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 60%;
+  color: black;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.carousel .slide {
+  background: none;
+}
+
+.carousel .control-dots .dot{
+  background-color: #115945 !important;
+}
+
+ /* Review section css */
+
+
+/* Contact section css */
+
+.contactSection {
+  margin-bottom: 50px;
+}
+
+.contactSection h4 {
+  color: #e59800;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contactSection h2 {
+  color: black;
+  padding: 15px 0px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.contactBackground {
+  width: 100%;
+  margin-top: 30px;
+  background: url('../public/ContactBackground.png');
+  background-size: 100% 80%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.ContactContainer {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+  color: black;
+}
+
+.contactWhite {
+  background-color: whitesmoke;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+
+.contactWhites {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactWhites h3 {
+  font-size: 24px;
+}
+
+.contactWhites p {
+  font-size: 18px;
+}
+
+.fa-phone, .fa-envelope, .fa-address-book {
+  color: #e59800;
+}
+
+.contactGreen {
+  background-color: #115945;
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactGreen input {
+  padding: 12px 20px;
+  outline: none;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: black;
+  border-radius: 8px;
+  border: none;
+}
+
+.contactGreen textarea {
+  padding: 12px 20px;
+  outline: none;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: black;
+  border-radius: 8px;
+  border: none;
+}
+
+.contactGreen button {
+  padding: 12px 20px;
+  background-color: #EFB74A;
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Contact section css */
+
+/* Footer section css */
+
+footer {
+  background-color: rgba(17, 89, 69, 1);
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+}
+
+.footerLogo {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 40%;
+}
+
+.footerLogo img {
+  width: 50%;
+  height: 50%;
+  filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+  border-radius: 50%;
+  background-position: center;
+  object-fit: cover;
+}
+
+.SiteMap, .SocialLinks {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.SiteMap h3, .SocialLinks h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #EFB74A;
+}
+
+.SiteMap a, .SocialLinks a {
+  text-decoration: none;
+}
+
+.SiteMap h5, .SocialLinks h5 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-instagram, .fa-youtube, .fa-whatsapp, .fa-twitter, .fa-facebook {
+  font-size: 20px;
+  color: #EFB74A;
+}
+
+.CopyRights h4 {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: #EFB74A;
+  color: black;
+}
+
+/* Footer section css */
+
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.nav-active {
+    transform: translateX(0%);
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    margin: 15px 0;
+  }
+
+  .nav-links a{
+    color: #fff;
+  }
+
+  .nav-links.nav-active li {
+    opacity: 1;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .burger.toggle div{
+    background-color: #fff;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Home section css */
+
+  .herosSection{
+    display: block;
+  }
+
+  .herosectionContent, .herosectionImage {
+    width: 100%;
+  }
+
+  /* Home section css */
+
+  /* Counter section css */
+
+  .Boxes {
+    flex-direction: column;
+    gap: 7%;
+  }
+
+  .Boxes-1, .Boxes-2 {
+    width: 100%;
+  }
+
+  .Box-2 {
+    border: none;
+  }
+
+  /* Counter section css */
+
+  /* About section css */
+
+  .AboutUsSection {
+    flex-direction: column;
+  }
+
+  .AboutUsContent, .AboutUsImage {
+    width: 100%;
+  }
+
+  /* About section css */
+
+  /* Course section css */
+
+  .courseSections {
+    flex-direction: column;
+  }
+  
+  .courseSectionImage {
+    width: 100%;
+    order: 2;
+  }
+
+  .courseSectionImage img {
+    width: 100%;
+  }
+
+  .courseSectionContent {
+    width: 100%;
+    order: 1;
+  }
+
+  /* Course section css */
+
+  /* Contact section css */
+
+  .ContactContainer {
+    flex-direction: column;
+  }
+
+  .contactWhite, .contactGreen {
+    width: 100%;
+  }
+
+  /* Contact section css */
+
+}
+
+@media screen and (min-width: 769px) {
+  .nav-links {
+    transform: translateX(0%);
+    position: static;
+    height: auto;
+    background: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .close-btn {
+    display: none;
+  }
+}
